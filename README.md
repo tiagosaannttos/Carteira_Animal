@@ -14,6 +14,7 @@ Implementação das funcionalidades no console (cadastro, listagem e exclusão);
 Organização do código.
 
 🧠 Funcionalidades Implementadas
+
 ✅ Cadastro de Animal, Tutor e Histórico
 
 ✅ Listagem de todos os registros
