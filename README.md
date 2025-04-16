@@ -21,7 +21,7 @@ Organização do código.
 
 ✅ Exclusão de registros
 
-✅ Estrutura em camadas (Model, Controller)
+✅ Estrutura de 3 camadas (Model, Controller, View)
 
 ✅ Menu no console simples e funcional
 
