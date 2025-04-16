@@ -1,4 +1,5 @@
 🐾 Carteira Animal
+
 Este repositório contém a parte desenvolvida por mim (Tiago dos Santos Silva) para o projeto da faculdade voltado ao controle e histórico de animais de estimação. O sistema foi construído em Java utilizando o padrão CRUD (Criar, Ler, Atualizar e Deletar) para gerenciar Animais, Tutores e seus Históricos.
 
 🎓 Sobre o Projeto Acadêmico
