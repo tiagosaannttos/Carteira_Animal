@@ -5,55 +5,65 @@ public class Tutor {
     private String nome;
     private String endereco;
     private String telefone;
-    private String email;
+    private String email;   // Novo campo
+    private String cpf;     // Novo campo
 
-    public  Tutor(int id, String nome, String endereco, String telefone, String email){
-        this.id =id;
+    // Construtor atualizado com os novos campos
+    public Tutor(int id, String nome, String endereco, String telefone, String email, String cpf) {
+        this.id = id;
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-
+        this.cpf = cpf;
     }
 
-    public int getId(){
+    // Getters e setters para os novos campos
+    public int getId() {
         return id;
     }
 
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getEndereco(){
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco){
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
-    public String getTelefone(){
+    public String getTelefone() {
         return telefone;
     }
-    public void setTelefone(String telefone){
+
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
 
+    public String getCpf() {
+        return cpf;
+    }
 
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 }

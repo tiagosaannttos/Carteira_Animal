@@ -1,35 +1,55 @@
-
 package model;
-import java.util.Date;
 
+// Classe que representa o Histórico de um Animal
 public class Historico {
-    private int id;
-    private int animalId;
-    private Date data;
-    private String descricao;
-    private String veterinario;
 
-    public Historico(int id, int animalId, Date data, String descricao, String veterinario) {
-        this.id = id;
-        this.animalId = animalId;
-        this.data = data;
-        this.descricao = descricao;
-        this.veterinario = veterinario;
+    private int id;
+    private String descricao;
+    private String data;
+    private int idAnimal; // chave estrangeira (relacionamento com Animal)
+
+    // Construtor vazio
+    public Historico() {
     }
 
-    // Getters e Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    // Construtor com todos os atributos
+    public Historico(int id, String descricao, String data, int idAnimal) {
+        this.id = id;
+        this.descricao = descricao;
+        this.data = data;
+        this.idAnimal = idAnimal;
+    }
 
-    public int getAnimalId() { return animalId; }
-    public void setAnimalId(int animalId) { this.animalId = animalId; }
+    // Getters e Setters (acesso e modificação dos atributos)
+    public int getId() {
+        return id;
+    }
 
-    public Date getData() { return data; }
-    public void setData(Date data) { this.data = data; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getDescricao() { return descricao; }
-    public void setDescricao(String descricao) { this.descricao = descricao; }
+    public String getDescricao() {
+        return descricao;
+    }
 
-    public String getVeterinario() { return veterinario; }
-    public void setVeterinario(String veterinario) { this.veterinario = veterinario; }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public int getIdAnimal() {
+        return idAnimal;
+    }
+
+    public void setIdAnimal(int idAnimal) {
+        this.idAnimal = idAnimal;
+    }
 }

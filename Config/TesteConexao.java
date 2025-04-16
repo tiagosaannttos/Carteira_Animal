@@ -1,25 +1,24 @@
 package Config;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+// Classe responsável por realizar a conexão com o banco de dados
 public class TesteConexao {
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/carteira_Animal?useSSL=false&serverTimezone=UTC";
 
-    String user = "root";
-    String password = "admin";
+    // Configurações da conexão
+    private static final String URL = "jdbc:mysql://localhost:3306/carteira_animal"; 
+    private static final String USUARIO = "root"; 
+    private static final String SENHA = "admin"; 
 
-    try {
-        Connection conn = DriverManager.getConnection(url, user, password);
-        if (conn != null) {
-            System.out.println("Conexão bem-sucedida!");
-            conn.close();
-            System.out.println("Conexão fechada com sucesso!");
+    // Método que realiza a conexão com o banco de dados
+    public static Connection conectar() {
+        try {
+            return DriverManager.getConnection(URL, USUARIO, SENHA);
+        } catch (SQLException erro) {
+            System.out.println("Erro ao conectar no banco: " + erro.getMessage());
+            return null;
         }
-    } catch (SQLException e) {
-        System.out.println("Erro ao conectar: " + e.getMessage());
-    }
-
     }
 }
